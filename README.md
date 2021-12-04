@@ -15,12 +15,13 @@ I originially developed this to flash firmware programmed in Rust.
 mkdir build
 cd build
 cmake ..
+make
 ```
 
 ## How to install
 As root execute
 ```
-cmake install
+make install
 ```
 
 # How to use
