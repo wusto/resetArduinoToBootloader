@@ -38,5 +38,5 @@ Please be aware that the standard avrdude somehow has problems flashing software
 
 I used the avrdude provided with the arduino sdk. E.g.:
 ```
-./resetArduinoToBootloader /dev/ttyACM0 && /home/<YOUR_USER_NAME>/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino17/bin/avrdude -C/home/<YOUR_USER_NAME>/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino17/etc/avrdude.conf -v -V -patmega32u4 -cavr109 -P/dev/ttyACM0 -b57600 -D -Uflash:w:<THE_ELF_FILE_TO_FLASH>
+./resetArduinoToBootloader /dev/ttyACM0 && /home/${USER}/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino17/bin/avrdude -C/home/${USER}/.arduino15/packages/arduino/tools/avrdude/6.3.0-arduino17/etc/avrdude.conf -v -V -patmega32u4 -cavr109 -P/dev/ttyACM0 -b57600 -D -Uflash:w:<THE_ELF_FILE_TO_FLASH>
 ```
